@@ -1,0 +1,19 @@
+{
+  "name": "kc-node-wip",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonybolanyo/kc-node-wip.git"
+  },
+  "author": "Tony G. Bolaño <tony@example.com> (https://tonygb.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tonybolanyo/kc-node-wip/issues"
+  },
+  "homepage": "https://github.com/tonybolanyo/kc-node-wip#readme"
+}

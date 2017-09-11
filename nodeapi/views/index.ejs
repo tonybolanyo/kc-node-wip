@@ -1,24 +1,58 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+<% include header %>
 
-    <!-- Comprobamos que EJS escapa el código, esto no sería así con un guión en lugar del igual -->
-    <%= valor %>
+<header class="masthead">
+  <div class="container h-100">
+    <div class="row h-100">
+      <div class="col-lg-7 my-auto">
+        <div class="header-content mx-auto">
+          <h1 class="mb-5">New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
+          <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a>
+        </div>
+      </div>
+      <div class="col-lg-5 my-auto">
+        <div class="device-container">
+          <div class="device-mockup iphone6_plus portrait white">
+            <div class="device">
+              <div class="screen">
+                <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="button">
+                <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
 
-    <% if (condicion.estado) { %>
-      <p><%= condicion.segundo %> es par</p>
-      <% } else { %>
-        <p><%= condicion.segundo %> es impar</p>
-    <% } %>
 
-    <% users.forEach(function(user){ %>
-      <p><%= user.name + ' ' + user.age %></p>
-    <% }) %>
-  </body>
-</html>
+<section class="download bg-primary text-center" id="download">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+
+        <h1><%= title %></h1>
+        <p>Welcome to <%= title %></p>
+
+        <!-- Comprobamos que EJS escapa el código, esto no sería así con un guión en lugar del igual -->
+        <%= valor %>
+
+        <% if (condicion.estado) { %>
+          <p><%= condicion.segundo %> es par</p>
+        <% } else { %>
+          <p><%= condicion.segundo %> es impar</p>
+        <% } %>
+            
+        <% users.forEach(function(user){ %>
+          <p><%= user.name + ' ' + user.age %></p>
+        <% }) %>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<% include footer %>

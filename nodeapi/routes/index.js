@@ -21,4 +21,8 @@ router.get('/', function(req, res, next) {
   });
 });
 
+router.get('/hola', function(req, res, next) {
+  res.render('hola');
+})
+
 module.exports = router;

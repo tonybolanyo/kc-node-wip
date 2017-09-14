@@ -1,0 +1,15 @@
+{
+  "name": "ejemplo_request",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Tony G. Bolaño <tony@example.com> (https://tonygb.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.81.0"
+  }
+}
